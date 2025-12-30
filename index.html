@@ -9,17 +9,47 @@
 
 <header>
   <h1>MM2 Values</h1>
-  <p>Unofficial Murder Mystery 2 Value List</p>
+  <p>Unofficial Murder Mystery 2 Trading Values</p>
 </header>
 
-<input type="text" id="search" placeholder="Search items...">
+<nav>
+  <button onclick="filterType('All')">All</button>
+  <button onclick="filterType('Knife')">Knives</button>
+  <button onclick="filterType('Gun')">Guns</button>
+  <button onclick="filterType('Pet')">Pets</button>
+</nav>
 
-<div id="items"></div>
+<section id="items"></section>
+
+<hr>
+
+<h2 class="center">Trade Calculator</h2>
+
+<div class="trade">
+  <div>
+    <h3>Your Side</h3>
+    <select id="yourSelect"></select>
+    <button onclick="addItem('you')">Add</button>
+    <ul id="yourItems"></ul>
+    <p>Total: <span id="yourTotal">0</span></p>
+  </div>
+
+  <div>
+    <h3>Their Side</h3>
+    <select id="theirSelect"></select>
+    <button onclick="addItem('them')">Add</button>
+    <ul id="theirItems"></ul>
+    <p>Total: <span id="theirTotal">0</span></p>
+  </div>
+</div>
+
+<h2 id="result" class="center"></h2>
 
 <footer>
   <p>Not affiliated with Roblox or MM2. Values are estimates.</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="items.js"></script>
+<script src="trade.js"></script>
 </body>
 </html>
