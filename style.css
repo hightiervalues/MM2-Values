@@ -1,52 +1,54 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #0f0f0f;
-  color: white;
-  margin: 0;
+  background:#0e0e0e;
+  color:white;
+  font-family:Arial;
+  margin:0;
 }
 
-header {
-  text-align: center;
-  padding: 20px;
-  background: #1e1e1e;
+header, footer {
+  background:#1b1b1b;
+  text-align:center;
+  padding:15px;
 }
 
-#search {
-  width: 90%;
-  margin: 20px auto;
-  display: block;
-  padding: 10px;
-  font-size: 16px;
+nav {
+  text-align:center;
+  padding:10px;
+}
+
+nav button {
+  margin:5px;
+  padding:8px 15px;
+  cursor:pointer;
 }
 
 #items {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
-  padding: 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:15px;
+  padding:20px;
 }
 
 .item {
-  background: #1b1b1b;
-  padding: 15px;
-  border-radius: 8px;
+  background:#1a1a1a;
+  padding:10px;
+  border-radius:6px;
 }
 
-.item h3 {
-  margin: 0 0 10px;
+.trade {
+  display:flex;
+  justify-content:space-around;
+  padding:20px;
+  flex-wrap:wrap;
 }
 
-.value {
-  color: #00ff9c;
+.trade div {
+  background:#1a1a1a;
+  padding:15px;
+  border-radius:6px;
+  width:300px;
 }
 
-.demand {
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #1e1e1e;
+.center {
+  text-align:center;
 }
